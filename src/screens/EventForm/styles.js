@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   },
   title: {
     paddingVertical: '1%',
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
 });
 

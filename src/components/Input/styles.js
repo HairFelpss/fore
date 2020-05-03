@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     color: colors.grey,
     paddingHorizontal: 10,
     paddingVertical: 0,
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
   inputMultiline: {
     textAlignVertical: 'top',
@@ -30,6 +31,7 @@ const styles = StyleSheet.create({
     color: colors.grey,
     paddingHorizontal: 10,
     paddingVertical: 0,
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
 });
 

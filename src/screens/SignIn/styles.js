@@ -19,17 +19,17 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 35,
-    fontWeight: 'bold',
     color: colors.grey,
-    fontWeight: 'bold',
     textAlign: 'center',
     paddingBottom: '2%',
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
   text: {
     fontSize: 15,
     paddingLeft: '15%',
     color: colors.darkGrey,
     paddingVertical: '2%',
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
 });
 

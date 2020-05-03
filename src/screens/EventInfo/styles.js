@@ -26,15 +26,16 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 21,
-    fontWeight: 'bold',
     color: 'black',
     paddingLeft: '5%',
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
   text: {
     fontSize: 15,
     paddingLeft: '15%',
     color: colors.darkGrey,
     paddingVertical: '2%',
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
 });
 

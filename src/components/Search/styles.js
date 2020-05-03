@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     backgroundColor: colors.lightestBlue,
     color: colors.grey,
+    fontFamily: 'ComicSansMSRegular.ttf',
   },
 });
 

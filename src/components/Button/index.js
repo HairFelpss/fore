@@ -22,9 +22,8 @@ const Button = ({title, size, screen, bottom, type}) => {
           style={{
             textAlign: 'center',
             fontSize: size,
-            fontWeight: 'bold',
             color: colors.white,
-            fontFamily: 'Cochin',
+            fontFamily: 'ComicSansMSRegular.ttf',
           }}>
           {title}
         </Text>
@@ -39,10 +38,9 @@ const Button = ({title, size, screen, bottom, type}) => {
           style={{
             textAlign: 'center',
             fontSize: size,
-            fontWeight: 'bold',
             paddingTop: 0,
             color: colors.white,
-            fontFamily: 'Cochin',
+            fontFamily: 'ComicSansMSRegular.ttf',
           }}>
           {title}
         </Text>
