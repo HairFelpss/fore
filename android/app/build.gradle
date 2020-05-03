@@ -157,13 +157,13 @@ android {
             buildConfigField "String", "CODEPUSH_deploymentKey", '""'
         }
         releaseStaging{
-            buildConfigField "String", "CODEPUSH_deploymentKey", '"1fTvVWbtAsR3VNh3Q0zUHeTFQY-uRJGvSLDvz"'
+            buildConfigField "String", "CODEPUSH_deploymentKey", '"1SdSsnoZcnGC3zZ5oFeISCr36JC669JsMa1Cx"'
             matchingFallbacks = ['debug', 'release']
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://facebook.github.io/react-native/docs/signed-apk-android.
-            buildConfigField "String", "CODEPUSH_deploymentKey", '"L-J6H7H5rsSxQMLPWHPyArCvvw-l16p_C31mO"'
+            buildConfigField "String", "CODEPUSH_deploymentKey", '"tLKKlfXSC04rqBxOWbBPWbR8Tx8lYIq-ZUT41"'
         }
     }
 
