@@ -56,7 +56,7 @@ const noAuthRoutes = createStackNavigator(
       headerTitleStyle: {
         color: 'white',
         fontSize: 26,
-        fontWeight: 'bold',
+        fontFamily: 'comic-sans-ms-bold',
       },
       animationEnabled: false,
     },
@@ -213,9 +213,9 @@ const AuthRoutes = createStackNavigator(
         paddingLeft: '50%',
       },
       headerTitleStyle: {
-        color: colors.lightGrey,
+        color: 'white',
         fontSize: 26,
-        fontWeight: 'bold',
+        fontFamily: 'comic-sans-ms-bold',
       },
       animationEnabled: false,
     },

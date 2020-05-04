@@ -17,14 +17,13 @@ const Button = ({title, size, screen, bottom, type}) => {
         })
       }
       style={styles.imageWrapper}>
-      <ImageBackground style={styles.theImage} source={button}>
+      <ImageBackground style={styles.image} source={button}>
         <Text
           style={{
             textAlign: 'center',
             fontSize: size,
-            fontWeight: 'bold',
             color: colors.white,
-            fontFamily: 'Cochin',
+            fontFamily: 'comic-sans-ms-bold',
           }}>
           {title}
         </Text>
@@ -34,15 +33,14 @@ const Button = ({title, size, screen, bottom, type}) => {
     <TouchableOpacity
       onPress={() => navigation.navigate(screen)}
       style={styles.imageBottom}>
-      <ImageBackground style={styles.theImage} source={button}>
+      <ImageBackground style={styles.image} source={button}>
         <Text
           style={{
             textAlign: 'center',
             fontSize: size,
-            fontWeight: 'bold',
             paddingTop: 0,
             color: colors.white,
-            fontFamily: 'Cochin',
+            fontFamily: 'comic-sans-ms-bold',
           }}>
           {title}
         </Text>

@@ -21,21 +21,21 @@ const SignIn = () => {
         <Text style={styles.title}>Sign In</Text>
         <View style={{paddingTop: '15%'}}>
           <Input content="Mobile Phone #" />
-          <Input content="Password" />
+          <Input content="Password" password />
 
-          <View style={{paddingTop: '10%', alignSelf: 'center'}}>
+          <View style={{paddingTop: '5%', alignSelf: 'center'}}>
             <CheckBox
               title="Keep Me Signed In"
               color={colors.grey}
-              fontSize={20}
+              fontSize={15}
             />
           </View>
           <View style={{paddingTop: '10%', alignSelf: 'center'}}>
-            <Button title="Log In" size={22} screen="Home" />
+            <Button title="Log In" size={22} screen="Home" bottom />
           </View>
         </View>
       </LinearGradient>
-      <Button title="Sign Up" size={22} screen="SignUp" />
+      <Button title="Sign Up" size={22} screen="SignUp" bottom />
     </ImageBackground>
   );
 };

@@ -12,18 +12,20 @@ const styles = StyleSheet.create({
   title: {
     textAlign: 'center',
     fontSize: 15,
-    fontWeight: 'bold',
+    fontFamily: 'comic-sans-ms-bold',
     color: colors.grey,
   },
   text: {
     textAlign: 'center',
     fontSize: 13,
     color: colors.grey,
+    fontFamily: 'ComicSansMSRegular',
   },
   smallText: {
     textAlign: 'center',
     fontSize: 9,
     color: colors.grey,
+    fontFamily: 'ComicSansMSRegular',
   },
 });
 

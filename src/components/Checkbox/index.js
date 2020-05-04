@@ -18,6 +18,7 @@ const Checkbox = ({title, fontSize, color, center}) => {
             fontSize: fontSize,
             color: color,
             paddingLeft: '4%',
+            fontFamily: 'ComicSansMSRegular',
           }}>
           {title}
         </Text>
@@ -27,13 +28,13 @@ const Checkbox = ({title, fontSize, color, center}) => {
       checkedIcon={
         <Image
           source={checkboxChecked}
-          style={{width: 30, height: 30, margin: 0, padding: 0}}
+          style={{width: 23, height: 23, margin: 0, padding: 0}}
         />
       }
       uncheckedIcon={
         <Image
           source={checkboxUnchecked}
-          style={{width: 30, height: 30, margin: 0, padding: 0}}
+          style={{width: 23, height: 23, margin: 0, padding: 0}}
         />
       }
       checked={checked}

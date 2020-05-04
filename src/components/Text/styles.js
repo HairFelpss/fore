@@ -4,8 +4,8 @@ import colors from '~/styles';
 const styles = StyleSheet.create({
   content: {},
   title: {
-    fontSize: 21,
-    fontWeight: 'bold',
+    fontSize: 20,
+    fontFamily: 'comic-sans-ms-bold',
     color: colors.grey,
     paddingLeft: '2%',
   },

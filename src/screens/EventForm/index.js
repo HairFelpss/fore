@@ -30,7 +30,12 @@ const EventForm = () => {
             <View style={styles.title}>
               <Title title="How Many Holes" />
               <Text
-                style={{fontSize: 10, paddingLeft: '2%', color: colors.grey}}>
+                style={{
+                  fontSize: 10,
+                  paddingLeft: '2%',
+                  color: colors.grey,
+                  fontFamily: 'ComicSansMSRegular',
+                }}>
                 (Tip: 9 Holes May Draw More Player)
               </Text>
             </View>

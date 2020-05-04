@@ -3,7 +3,7 @@ import {Input} from 'react-native-elements';
 import colors from '~/styles';
 import styles from './styles';
 
-export const InputField = ({content}) => {
+export const InputField = ({content, password}) => {
   const [inputValue, setInputValue] = useState('');
   return (
     <Input
@@ -13,6 +13,7 @@ export const InputField = ({content}) => {
       onChange={(e) => setInputValue(e.target.value)}
       inputStyle={styles.input}
       inputContainerStyle={styles.inputContainer}
+      secureTextEntry={password ? true : false}
     />
   );
 };

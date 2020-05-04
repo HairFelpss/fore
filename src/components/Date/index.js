@@ -19,10 +19,14 @@ const Title = ({date, name}) => {
         alignItems: 'center',
       }}>
       <View>
-        <Text style={{fontSize: 21}}>{name}</Text>
+        <Text style={{fontSize: 21, fontFamily: 'ComicSansMSRegular'}}>
+          {name}
+        </Text>
       </View>
       <View style={{width: '50%'}}>
-        <Text style={{fontSize: 21}}>{Moment(date).format('L')}</Text>
+        <Text style={{fontSize: 21, fontFamily: 'ComicSansMSRegular'}}>
+          {Moment(date).format('L')}
+        </Text>
       </View>
       <View style={{borderLeftWidth: 1}}>
         <Icon

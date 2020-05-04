@@ -16,7 +16,14 @@ const Title = ({name}) => {
         alignItems: 'center',
       }}>
       <View style={{width: '75%'}}>
-        <Text style={{fontSize: 21, textAlign: 'center'}}>{name}</Text>
+        <Text
+          style={{
+            fontSize: 21,
+            textAlign: 'center',
+            fontFamily: 'ComicSansMSRegular',
+          }}>
+          {name}
+        </Text>
       </View>
       <View style={{borderLeftWidth: 1}}>
         <Icon name="arrow-drop-down" type="material" color="black" />

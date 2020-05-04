@@ -28,7 +28,7 @@ const SignUp = () => {
           <Input content="Favorite Golfer" />
           <Input content='Your Nickname: ie "Shooter"' />
         </ScrollView>
-        <Button title="Create Account" size={22} screen="Home" />
+        <Button title="Create Account" size={22} screen="Home" bottom />
       </LinearGradient>
       <Button title="Sign In" size={22} screen="SignIn" bottom />
     </ImageBackground>

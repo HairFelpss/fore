@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 21,
-    fontWeight: 'bold',
+    fontFamily: 'ComicSansMSRegular',
     color: 'black',
     paddingLeft: '5%',
   },
