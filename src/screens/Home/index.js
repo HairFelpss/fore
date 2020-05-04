@@ -10,7 +10,7 @@ import bg from '~/assets/background/bg.png';
 
 const events = [
   {name: 'Create Event', size: 25, screen: 'EventType'},
-  {name: 'Find Events Near Me', size: 22, screen: 'EventsNearMe'},
+  {name: 'Find Events Near Me', size: 21, screen: 'EventsNearMe'},
   {name: 'Scorecard Only', size: 25},
   {name: 'My Events', size: 25},
 ];
