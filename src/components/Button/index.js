@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {NavigationContext} from 'react-navigation';
 
-import {TouchableOpacity, ImageBackground, Text} from 'react-native';
+import {View, TouchableOpacity, ImageBackground, Text} from 'react-native';
 import colors from '~/styles';
 import styles from './styles';
 import button from '~/assets/button/button.png';
@@ -18,15 +18,21 @@ const Button = ({title, size, screen, bottom, type}) => {
       }
       style={styles.imageWrapper}>
       <ImageBackground style={styles.image} source={button}>
-        <Text
+        <View
           style={{
-            textAlign: 'center',
-            fontSize: size,
-            color: colors.white,
-            fontFamily: 'comic-sans-ms-bold',
+            paddingTop: size > 21 ? '1%' : '2%',
           }}>
-          {title}
-        </Text>
+          <Text
+            style={{
+              textAlign: 'center',
+              textAlignVertical: 'center',
+              fontSize: size,
+              color: colors.white,
+              fontFamily: 'comic-sans-ms-bold',
+            }}>
+            {title}
+          </Text>
+        </View>
       </ImageBackground>
     </TouchableOpacity>
   ) : (
@@ -34,16 +40,20 @@ const Button = ({title, size, screen, bottom, type}) => {
       onPress={() => navigation.navigate(screen)}
       style={styles.imageBottom}>
       <ImageBackground style={styles.image} source={button}>
-        <Text
+        <View
           style={{
-            textAlign: 'center',
-            fontSize: size,
-            paddingTop: 0,
-            color: colors.white,
-            fontFamily: 'comic-sans-ms-bold',
+            paddingTop: size > 20 ? '1%' : '2%',
           }}>
-          {title}
-        </Text>
+          <Text
+            style={{
+              textAlign: 'center',
+              fontSize: size,
+              color: colors.white,
+              fontFamily: 'comic-sans-ms-bold',
+            }}>
+            {title}
+          </Text>
+        </View>
       </ImageBackground>
     </TouchableOpacity>
   );

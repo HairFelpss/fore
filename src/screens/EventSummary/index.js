@@ -55,7 +55,7 @@ const EventSummary = () => {
           </View>
         </View>
       </LinearGradient>
-      <Button title="Looks Good? Let's Lauch!" size={14} screen="Home" bottom />
+      <Button title="Looks Good? Let's Lauch!" size={16} screen="Home" bottom />
     </ImageBackground>
   );
 };

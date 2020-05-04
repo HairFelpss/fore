@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderRadius: 20,
     paddingVertical: '2%',
+    marginVertical: '1%',
     backgroundColor: colors.darkBlue,
   },
   title: {
