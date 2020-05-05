@@ -42,7 +42,7 @@ const Button = ({title, size, screen, bottom, type}) => {
       <ImageBackground style={styles.image} source={button}>
         <View
           style={{
-            paddingTop: size > 20 ? '1%' : '2%',
+            paddingTop: size > 20 ? '1%' : '3%',
           }}>
           <Text
             style={{

@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     margin: 0,
     padding: 0,
-    borderWidth: 1,
   },
   image: {
     height: '100%',

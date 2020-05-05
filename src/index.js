@@ -6,5 +6,5 @@ import CodePush from 'react-native-code-push';
 const App = () => <Routes />;
 
 export default CodePush({
-  checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
+  checkFrequency: CodePush.CheckFrequency.ON_APP_START,
 })(App);
