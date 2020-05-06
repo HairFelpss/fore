@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {SearchBar} from 'react-native-elements';
+import {SearchBar, Icon} from 'react-native-elements';
 import colors from '~/styles';
 import styles from './styles';
 
@@ -9,11 +9,19 @@ const SearchBarField = ({content}) => {
   return (
     <SearchBar
       placeholder={content}
-      placeholderTextColor={colors.grey}
+      placeholderTextColor={colors.lightestGrey}
       value={inputValue}
       onChangeText={(search) => setInputValue({search})}
       inputStyle={styles.input}
       inputContainerStyle={styles.inputContainer}
+      searchIcon={
+        <Icon
+          name="search"
+          type="material"
+          color={colors.lightGrey}
+          size={30}
+        />
+      }
       containerStyle={{
         backgroundColor: 'transparent',
         borderTopWidth: 0,

@@ -18,5 +18,6 @@ export default {
   darkBlue: '#00D2E9',
 
   grey: '#58585A',
+  lightGrey: '#828282',
   darkGrey: '#414141',
 };

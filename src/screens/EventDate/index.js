@@ -20,10 +20,12 @@ const EventDate = () => {
           <Date name="Event Date:" />
         ) : (
           <View>
-            <View style={{paddingBottom: '5%'}}>
-              <Date name="Event Start Date: " />
+            <View style={{width: '100%', paddingBottom: '5%'}}>
+              <Date name="Event Start Date:" />
             </View>
-            <Date name="Event End Date: " />
+            <View style={{width: '100%'}}>
+              <Date name="Event End Date:" end/>
+            </View>
           </View>
         )}
         <Button title="Next" size={22} screen="EventNear" bottom />

@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.select,
     borderColor: colors.grey,
-    borderRadius: 50,
+    borderRadius: 15,
     shadowColor: colors.black,
     shadowOffset: {width: 0, height: 1},
     shadowOpacity: 0.9,

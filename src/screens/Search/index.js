@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ImageBackground, StatusBar, View, Text} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
@@ -11,9 +11,11 @@ import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
 
 import states from '~/config/states';
-import city from '~/config/city';
+import city from '~/config/coursesNearMe';
 
 const Search = () => {
+  const [selectStates, setSelectStates] = useState(states);
+  const [selectCity, setSelectCity] = useState(city);
   return (
     <ImageBackground source={bg} style={styles.container} resizeMode="cover">
       <StatusBar barStyle="light-content" backgroundColor="#33EBFF" />
@@ -45,8 +47,18 @@ const Search = () => {
             OR
           </Text>
           <View style={{paddingTop: '5%'}}>
-            <Select name="State" list={states} />
-            <Select name="City/Course" list={city} />
+            <Select
+              name="State"
+              list={states}
+              setElement={setSelectStates}
+              value={selectStates}
+            />
+            <Select
+              name="City/Course"
+              list={city}
+              setElement={setSelectCity}
+              value={selectCity}
+            />
           </View>
         </View>
       </LinearGradient>

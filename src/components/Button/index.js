@@ -8,7 +8,6 @@ import button from '~/assets/button/button.png';
 
 const Button = ({title, size, screen, bottom, type}) => {
   const navigation = useContext(NavigationContext);
-  console.log(screen);
   return !bottom ? (
     <TouchableOpacity
       onPress={() =>

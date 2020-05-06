@@ -1,11 +1,18 @@
 export default [
   {
-    navOptionName: 'First',
+    label: 'Croasdaile Country Club',
+    value: 1,
   },
   {
-    navOptionName: 'Second',
+    label: 'Goldsboro Municial Golf Course',
+    value: 2,
   },
   {
-    navOptionName: 'Third',
+    label: 'Reedy Creek Golf Course',
+    value: 3,
+  },
+  {
+    label: 'Lonnie Poole Golf Course',
+    value: 4,
   },
 ];

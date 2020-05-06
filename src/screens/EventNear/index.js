@@ -10,12 +10,18 @@ import bg from '~/assets/background/bg.png';
 import courses from '~/config/coursesNearMe';
 
 const EventNear = () => {
+  const [selectCourses, setSelectCourses] = useState(courses);
   return (
     <ImageBackground source={bg} style={styles.container} resizeMode="cover">
       <StatusBar barStyle="light-content" backgroundColor="#33EBFF" />
 
       <View style={[styles.screen, {marginTop: useHeaderHeight() * 2.5}]}>
-        <Select name="Courses Near Me" list={courses} />
+        <Select
+          name="Courses Near Me"
+          list={courses}
+          setElement={setSelectCourses}
+          value={selectCourses}
+        />
         <Button
           title="Search All Courses"
           size={18}

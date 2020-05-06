@@ -1,5 +1,12 @@
-import React from 'react';
-import {ImageBackground, StatusBar, View, Text} from 'react-native';
+import React, {useContext} from 'react';
+import {
+  ImageBackground,
+  StatusBar,
+  View,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
+import {NavigationContext} from 'react-navigation';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import Card from '~/components/Card';
@@ -9,6 +16,7 @@ import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
 
 const Find = () => {
+  const navigation = useContext(NavigationContext);
   return (
     <ImageBackground source={bg} style={styles.container} resizeMode="cover">
       <StatusBar barStyle="light-content" backgroundColor="#33EBFF" />
@@ -29,38 +37,42 @@ const Find = () => {
             width: '90%',
             height: '85%',
           }}>
-          <View
-            style={{
-              borderTopWidth: 0.8,
-              borderTopColor: colors.grey,
-              width: '100%',
-              paddingVertical: '5%',
-            }}>
-            <Card
-              title="Jordan Webers Sigourney best shot"
-              firstRow="Sigourney Golf Course"
-              secondRow="Best Shot Tournament"
-              thirdRow="Date: 5/15/2020"
-              fourthRow="Entry Fee: $50"
-              fifthRow="Click For More Details"
-            />
-          </View>
-          <View
-            style={{
-              borderTopWidth: 0.8,
-              borderTopColor: colors.grey,
-              width: '100%',
-              paddingVertical: '5%',
-            }}>
-            <Card
-              title="Jordan Weber's Dyersville Country Club"
-              firstRow="Sigourney Golf Course"
-              secondRow="Best Shot Tournament"
-              thirdRow="Date: 5/15/2020"
-              fourthRow="Entry Fee: $50"
-              fifthRow="Click For More Details"
-            />
-          </View>
+          <ScrollView style={{height: '100%'}}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Details')}
+              style={{
+                borderTopWidth: 0.8,
+                borderTopColor: colors.grey,
+                width: '100%',
+                paddingVertical: '5%',
+              }}>
+              <Card
+                title="Jordan Webers Sigourney best shot"
+                firstRow="Sigourney Golf Course"
+                secondRow="Best Shot Tournament"
+                thirdRow="Date: 5/15/2020"
+                fourthRow="Entry Fee: $50"
+                fifthRow="Click For More Details"
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Details')}
+              style={{
+                borderTopWidth: 0.8,
+                borderTopColor: colors.grey,
+                width: '100%',
+                paddingVertical: '5%',
+              }}>
+              <Card
+                title="Jordan Weber's Dyersville Country Club"
+                firstRow="Sigourney Golf Course"
+                secondRow="Best Shot Tournament"
+                thirdRow="Date: 5/15/2020"
+                fourthRow="Entry Fee: $50"
+                fifthRow="Click For More Details"
+              />
+            </TouchableOpacity>
+          </ScrollView>
         </View>
       </LinearGradient>
     </ImageBackground>

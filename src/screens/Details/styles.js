@@ -7,13 +7,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: (Dimensions.get('window').width * 0.1) / 4,
     paddingVertical: (Dimensions.get('window').width * 0.1) / 2,
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
-  screen: {
-    flex: 1,
+  panel: {
+    marginTop: '5%',
     flexDirection: 'column',
     alignItems: 'center',
-    paddingTop: '20%',
-    justifyContent: 'space-between',
+    borderRadius: 20,
+    height: '75%',
+    width: '90%',
   },
 });
 

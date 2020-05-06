@@ -5,43 +5,50 @@ import Moment from 'moment';
 import {Icon} from 'react-native-elements';
 import styles from './styles';
 
-const Title = ({date, name}) => {
+const Title = ({date, name, end}) => {
   Moment.locale('en');
   return (
     <View
       style={{
         flexDirection: 'row',
-        maxWidth: '86%',
-        paddingLeft: '5%',
-        paddingRight: '2%',
+        maxWidth: '95%',
+        paddingLeft: '2%',
         paddingVertical: 0,
         justifyContent: 'space-between',
         alignItems: 'center',
       }}>
       <View>
-        <Text style={{fontSize: 21, fontFamily: 'ComicSansMSRegular'}}>
+        <Text style={{fontSize: 18, fontFamily: 'ComicSansMSRegular'}}>
           {name}
         </Text>
       </View>
-      <View style={{width: '50%'}}>
-        <Text style={{fontSize: 21, fontFamily: 'ComicSansMSRegular'}}>
-          {Moment(date).format('L')}
-        </Text>
-      </View>
-      <View style={{borderLeftWidth: 1}}>
-        <Icon
-          iconStyle={{margin: 0, padding: 0}}
-          name="arrow-drop-down"
-          type="material"
-          color="black"
-        />
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          paddingLeft: end ? '6%' : '1%',
+        }}>
+        <View>
+          <Text style={{fontSize: 18, fontFamily: 'ComicSansMSRegular'}}>
+            {Moment(date).format('L')}
+          </Text>
+        </View>
+        <View style={{borderLeftWidth: 1, marginLeft: '2%'}}>
+          <Icon
+            iconStyle={{margin: 0, padding: 0}}
+            name="arrow-drop-down"
+            type="material"
+            color="black"
+            size={50}
+          />
+        </View>
       </View>
     </View>
   );
 };
 
-const App = ({name}) => {
-  const [date, setDate] = useState(new Date(1598051730000));
+const App = ({name, end}) => {
+  const [date, setDate] = useState(new Date().getTime());
   const [mode, setMode] = useState('date');
   const [show, setShow] = useState(false);
 
@@ -63,16 +70,16 @@ const App = ({name}) => {
   return (
     <View>
       <TouchableOpacity onPress={showDatepicker} style={styles.button}>
-        <Title date={date} name={name} />
+        <Title date={date} name={name} end={end} />
       </TouchableOpacity>
       {show && (
         <DateTimePicker
           testID="dateTimePicker"
           timeZoneOffsetInMinutes={0}
           value={date}
+          minimumDate={date}
           mode={mode}
-          is24Hour={true}
-          display="default"
+          display="calendar"
           onChange={onChange}
         />
       )}
