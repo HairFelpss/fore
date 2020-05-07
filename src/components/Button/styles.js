@@ -3,14 +3,14 @@ import {StyleSheet, Dimensions} from 'react-native';
 const styles = StyleSheet.create({
   imageWrapper: {
     height: Dimensions.get('window').height * 0.095,
-    width: Dimensions.get('window').width * 0.73,
+    width: Dimensions.get('window').width * 0.75,
     overflow: 'hidden',
     margin: 0,
     padding: 0,
   },
   imageBottom: {
     height: Dimensions.get('window').height * 0.085,
-    width: Dimensions.get('window').width * 0.76,
+    width: Dimensions.get('window').width * 0.65,
     overflow: 'hidden',
     margin: 0,
     padding: 0,

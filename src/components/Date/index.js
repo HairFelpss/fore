@@ -33,13 +33,13 @@ const Title = ({date, name, end}) => {
             {Moment(date).format('L')}
           </Text>
         </View>
-        <View style={{borderLeftWidth: 1, marginLeft: '2%'}}>
+        <View style={{borderLeftWidth: 0.8, marginLeft: '2%'}}>
           <Icon
             iconStyle={{margin: 0, padding: 0}}
             name="arrow-drop-down"
             type="material"
             color="black"
-            size={50}
+            size={35}
           />
         </View>
       </View>

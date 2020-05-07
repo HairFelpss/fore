@@ -1,7 +1,13 @@
 import React, {useContext} from 'react';
 import {NavigationContext} from 'react-navigation';
 
-import {View, TouchableOpacity, ImageBackground, Text} from 'react-native';
+import {
+  View,
+  TouchableOpacity,
+  ImageBackground,
+  Text,
+  Dimensions,
+} from 'react-native';
 import colors from '~/styles';
 import styles from './styles';
 import button from '~/assets/button/button.png';
@@ -39,6 +45,9 @@ export const Button = ({title, size, screen, type}) => {
 
 export const BottomButton = ({title, size, screen}) => {
   const navigation = useContext(NavigationContext);
+  console.log(Dimensions.get('window').height * 0.085);
+  console.log(Dimensions.get('window').width * 0.73);
+
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate(screen)}

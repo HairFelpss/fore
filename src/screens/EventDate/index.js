@@ -17,7 +17,9 @@ const EventDate = () => {
 
       <View style={[styles.screen, {marginTop: useHeaderHeight() * 2.5}]}>
         {type === 0 ? (
-          <Date name="Event Date:" />
+          <View style={{width: '100%'}}>
+            <Date name="Event Date:" />
+          </View>
         ) : (
           <View>
             <View style={{width: '100%', paddingBottom: '5%'}}>
