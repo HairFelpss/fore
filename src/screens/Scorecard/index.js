@@ -7,7 +7,7 @@ import CheckBox from '~/components/Checkbox';
 import styles from './styles';
 import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 
 import {Title} from '~/components/Text';
 
@@ -28,7 +28,7 @@ const Scorecard = () => {
           </View>
         </View>
       </LinearGradient>
-      <Button title="Next" size={22} screen="WhosPlaying" bottom />
+      <BottomButton title="Next" size={22} screen="WhosPlaying" />
     </ImageBackground>
   );
 };

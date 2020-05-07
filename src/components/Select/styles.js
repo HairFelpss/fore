@@ -3,7 +3,11 @@ import colors from '~/styles';
 
 const styles = StyleSheet.create({
   view: {
+    flexDirection: 'row',
     backgroundColor: colors.select,
+    width: '100%',
+    height: '10%',
+    alignItems: 'center',
     borderColor: colors.grey,
     shadowColor: colors.black,
     borderRadius: 15,
@@ -12,19 +16,7 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     elevation: 8,
     borderWidth: 1,
-    marginBottom: '10%',
-  },
-  button: {
-    width: Dimensions.get('window').width * 0.8,
-    fontFamily: 'ComicSansMSRegular',
-    fontSize: 20,
-    color: colors.grey,
-  },
-  item: {
-    backgroundColor: colors.select,
-    color: colors.grey,
-    borderColor: colors.grey,
-    fontFamily: 'ComicSansMSRegular',
+    marginBottom: '5%',
   },
 });
 

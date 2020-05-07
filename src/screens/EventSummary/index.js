@@ -2,12 +2,9 @@ import React, {useState} from 'react';
 import {ImageBackground, StatusBar, View, Text} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
-import {InputField as Input, InputMultiline} from '~/components/Input';
-import CheckBox from '~/components/Checkbox';
 import styles from './styles';
-import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 
 import {Title} from '~/components/Text';
 
@@ -55,7 +52,7 @@ const EventSummary = () => {
           </View>
         </View>
       </LinearGradient>
-      <Button title="Looks Good? Let's Lauch!" size={16} screen="Home" bottom />
+      <BottomButton title="Looks Good? Let's Lauch!" size={16} screen="Home" />
     </ImageBackground>
   );
 };

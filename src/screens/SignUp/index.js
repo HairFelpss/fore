@@ -4,7 +4,7 @@ import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {InputField as Input} from '~/components/Input';
 import CheckBox from '~/components/Checkbox';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 
 import colors from '~/styles';
 import styles from './styles';
@@ -28,9 +28,9 @@ const SignUp = () => {
           <Input content="Favorite Golfer" />
           <Input content='Your Nickname: ie "Shooter"' />
         </ScrollView>
-        <Button title="Create Account" size={22} screen="Home" bottom />
+        <BottomButton title="Create Account" size={22} screen="Home" />
       </LinearGradient>
-      <Button title="Sign In" size={22} screen="SignIn" bottom />
+      <BottomButton title="Sign In" size={22} screen="SignIn" />
     </ImageBackground>
   );
 };

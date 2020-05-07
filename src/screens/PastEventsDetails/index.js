@@ -9,7 +9,7 @@ import {
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import Card from '~/components/Card';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 import styles from './styles';
 import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
@@ -78,7 +78,7 @@ const PastEventsDetails = () => {
           </ScrollView>
         </View>
       </LinearGradient>
-      <Button title="Home" size={22} screen="Home" bottom />
+      <BottomButton title="Home" size={22} screen="Home" />
     </ImageBackground>
   );
 };

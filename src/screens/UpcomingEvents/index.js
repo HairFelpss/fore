@@ -11,7 +11,7 @@ import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import Card from '~/components/Card';
 import {Title} from '~/components/Text';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 import styles from './styles';
 import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
@@ -35,7 +35,7 @@ const UpcomingEvents = () => {
           style={{
             paddingTop: '2%',
             width: '90%',
-            height: '90%',
+            height: '100%',
           }}>
           <ScrollView style={{height: '100%'}}>
             <TouchableOpacity
@@ -90,7 +90,7 @@ const UpcomingEvents = () => {
           </ScrollView>
         </View>
       </LinearGradient>
-      <Button title="My Event History" size={22} screen="PastEvents" bottom />
+      <BottomButton title="My Event History" size={22} screen="PastEvents" />
     </ImageBackground>
   );
 };

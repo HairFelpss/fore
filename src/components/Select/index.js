@@ -1,22 +1,38 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
+import {Icon} from 'react-native-elements';
 import styles from './styles';
-import {Picker} from '@react-native-community/picker';
+import colors from '~/styles';
 
-const Select = ({list, name, setElement, value}) => {
+const Select = ({name, toggleOverlay, selected}) => {
   return (
-    <View style={styles.view}>
-      <Picker
-        style={styles.button}
-        itemStyle={styles.item}
-        selectedValue={value}
-        onValueChange={(itemValue, itemIndex) => setElement(itemValue)}>
-        <Picker.Item label={name} value="" />
-        {list.map((item, index) => (
-          <Picker.Item label={item.label} value={item.value} key={index} />
-        ))}
-      </Picker>
-    </View>
+    <TouchableOpacity style={styles.view} onPress={toggleOverlay}>
+      <View style={{flex: 1}}>
+        <Text
+          style={{
+            color: colors.grey,
+            textAlign: 'center',
+            fontSize: selected ? 16 : 21,
+            fontFamily: 'ComicSansMSRegular',
+          }}>
+          {name}
+        </Text>
+      </View>
+      <View
+        style={{
+          borderLeftColor: colors.grey,
+          borderLeftWidth: 0.8,
+          height: '100%',
+          justifyContent: 'center',
+        }}>
+        <Icon
+          name="arrow-drop-down"
+          type="material"
+          color={colors.grey}
+          size={50}
+        />
+      </View>
+    </TouchableOpacity>
   );
 };
 

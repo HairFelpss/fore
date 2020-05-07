@@ -15,6 +15,13 @@ const styles = StyleSheet.create({
     margin: 0,
     padding: 0,
   },
+  smallButton: {
+    height: Dimensions.get('window').height * 0.055,
+    width: Dimensions.get('window').width * 0.49,
+    overflow: 'hidden',
+    margin: 0,
+    padding: 0,
+  },
   image: {
     height: '100%',
     resizeMode: 'contain',

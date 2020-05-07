@@ -4,6 +4,7 @@ import {useHeaderHeight} from 'react-navigation-stack';
 import {NavigationContext} from 'react-navigation';
 import LinearGradient from 'react-native-linear-gradient';
 import {DisplayName} from '~/components/Text';
+import {SmallButton} from '~/components/Button';
 import styles from './styles';
 import bg from '~/assets/background/bg.png';
 
@@ -39,6 +40,9 @@ const Leaderboard = () => {
                 onValueChange={toggleSwitch}
                 value={isEnabled}
               />
+            </View>
+            <View style={{paddingTop: '5%'}}>
+              <SmallButton title="Share" size={15} />
             </View>
           </View>
         </View>

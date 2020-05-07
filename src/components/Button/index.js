@@ -6,9 +6,9 @@ import colors from '~/styles';
 import styles from './styles';
 import button from '~/assets/button/button.png';
 
-const Button = ({title, size, screen, bottom, type}) => {
+export const Button = ({title, size, screen, type}) => {
   const navigation = useContext(NavigationContext);
-  return !bottom ? (
+  return (
     <TouchableOpacity
       onPress={() =>
         navigation.navigate(screen, {
@@ -34,7 +34,12 @@ const Button = ({title, size, screen, bottom, type}) => {
         </View>
       </ImageBackground>
     </TouchableOpacity>
-  ) : (
+  );
+};
+
+export const BottomButton = ({title, size, screen}) => {
+  const navigation = useContext(NavigationContext);
+  return (
     <TouchableOpacity
       onPress={() => navigation.navigate(screen)}
       style={styles.imageBottom}>
@@ -58,4 +63,25 @@ const Button = ({title, size, screen, bottom, type}) => {
   );
 };
 
-export default Button;
+export const SmallButton = ({title, size, onPress}) => {
+  return (
+    <TouchableOpacity onPress={onPress} style={styles.smallButton}>
+      <ImageBackground style={styles.image} source={button}>
+        <View
+          style={{
+            paddingTop: '1%',
+          }}>
+          <Text
+            style={{
+              textAlign: 'center',
+              fontSize: size,
+              color: colors.white,
+              fontFamily: 'comic-sans-ms-bold',
+            }}>
+            {title}
+          </Text>
+        </View>
+      </ImageBackground>
+    </TouchableOpacity>
+  );
+};

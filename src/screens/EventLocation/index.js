@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {ImageBackground, StatusBar, View} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import Select from '~/components/Select';
-import Button from '~/components/Button';
-
+import {BottomButton} from '~/components/Button';
+import Overlay from '~/components/Overlay';
 import styles from './styles';
 import bg from '~/assets/background/bg.png';
 
@@ -11,30 +11,65 @@ import states from '~/config/states';
 import city from '~/config/coursesNearMe';
 
 const EventLocation = () => {
-  const [selectStates, setSelectStates] = useState('');
-  const [selectCity, setSelectCity] = useState('');
+  const [selectedState, setSelectedState] = useState('');
+  const [selectedCity, setSelectedCity] = useState('');
+  const [visibleState, setVisibleState] = useState(false);
+  const [visibleCity, setVisibleCity] = useState(false);
+
+  const toggleCityOverlay = () => {
+    setVisibleCity(!visibleCity);
+  };
+
+  const toggleStateOverlay = () => {
+    setVisibleState(!visibleState);
+  };
+
+  const setCityOption = (value) => {
+    setSelectedCity(value);
+    toggleCityOverlay();
+  };
+
+  const setStateOption = (value) => {
+    setSelectedState(value);
+    toggleStateOverlay();
+  };
 
   return (
     <ImageBackground source={bg} style={styles.container} resizeMode="cover">
       <StatusBar barStyle="light-content" backgroundColor="#33EBFF" />
 
       <View style={[styles.screen, {marginTop: useHeaderHeight() * 2.5}]}>
-        <View>
+        <View style={{height: '80%', width: '80%'}}>
           <Select
-            name="State"
+            name={selectedState !== '' ? selectedState : 'State'}
             list={states}
-            setElement={setSelectStates}
-            value={selectStates}
+            toggleOverlay={toggleStateOverlay}
           />
           <Select
-            name="City/Course"
+            name={selectedCity !== '' ? selectedCity : 'City/Course'}
             list={city}
-            setElement={setSelectCity}
-            value={selectCity}
+            selected={selectedCity !== '' ? true : false}
+            toggleOverlay={toggleCityOverlay}
           />
         </View>
-        <Button title="Next" size={22} screen="EventForm" bottom />
+        <BottomButton title="Next" size={22} screen="EventForm" />
       </View>
+      {visibleState && (
+        <Overlay
+          visible={visibleState}
+          toggleOverlay={toggleStateOverlay}
+          list={states}
+          setOption={setStateOption}
+        />
+      )}
+      {visibleCity && (
+        <Overlay
+          visible={visibleCity}
+          toggleOverlay={toggleCityOverlay}
+          list={city}
+          setOption={setCityOption}
+        />
+      )}
     </ImageBackground>
   );
 };

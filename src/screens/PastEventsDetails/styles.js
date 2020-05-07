@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   panel: {
-    marginTop: '5%',
     flexDirection: 'column',
     alignItems: 'center',
     borderRadius: 20,

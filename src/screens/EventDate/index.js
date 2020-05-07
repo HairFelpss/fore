@@ -3,7 +3,7 @@ import {ImageBackground, StatusBar, View} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import {NavigationContext} from 'react-navigation';
 import Date from '~/components/Date';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 
 import styles from './styles';
 import bg from '~/assets/background/bg.png';
@@ -24,11 +24,11 @@ const EventDate = () => {
               <Date name="Event Start Date:" />
             </View>
             <View style={{width: '100%'}}>
-              <Date name="Event End Date:" end/>
+              <Date name="Event End Date:" end />
             </View>
           </View>
         )}
-        <Button title="Next" size={22} screen="EventNear" bottom />
+        <BottomButton title="Next" size={22} screen="EventNear" />
       </View>
     </ImageBackground>
   );

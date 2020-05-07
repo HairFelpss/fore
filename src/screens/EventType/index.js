@@ -9,7 +9,7 @@ import {
 import {NavigationContext} from 'react-navigation';
 import {useHeaderHeight} from 'react-navigation-stack';
 
-import Button from '~/components/Button';
+import {Button} from '~/components/Button';
 
 import styles from './styles';
 import bg from '~/assets/background/bg.png';

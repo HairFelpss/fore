@@ -4,7 +4,7 @@ import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {InputField as Input} from '~/components/Input';
 import CheckBox from '~/components/Checkbox';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 
 import colors from '~/styles';
 import styles from './styles';
@@ -31,11 +31,11 @@ const SignIn = () => {
             />
           </View>
           <View style={{paddingTop: '10%', alignSelf: 'center'}}>
-            <Button title="Log In" size={22} screen="Home" bottom />
+            <BottomButton title="Log In" size={22} screen="Home" />
           </View>
         </View>
       </LinearGradient>
-      <Button title="Sign Up" size={22} screen="SignUp" bottom />
+      <BottomButton title="Sign Up" size={22} screen="SignUp" />
     </ImageBackground>
   );
 };

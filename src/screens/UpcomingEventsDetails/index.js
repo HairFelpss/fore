@@ -33,45 +33,54 @@ const UpcomingEventsDetails = () => {
         }}
       />
       <LinearGradient colors={['#82F3FF', '#00A9BB']} style={styles.panel}>
-        <ScrollView styles={{width: '100%', height: '90%'}}>
-          <View
-            style={{
-              borderTopColor: colors.grey,
-              width: '100%',
-              paddingVertical: '5%',
-              marginBottom: '5%',
-              borderBottomWidth: 0.8,
-            }}>
-            <Card
-              title="Jordan Weber's Dyersville Country Club"
-              firstRow="Dyersville Country Club"
-              secondRow="Best Shot Tournament"
-              thirdRow="Date: 5/15/2020"
-              incomplete
-            />
-          </View>
-          <View
-            style={{
-              borderTopColor: colors.grey,
-              borderBottomWidth: 0.8,
-              width: '100%',
-              alignItems: 'center',
-              paddingBottom: '3%',
-              marginBottom: '3%',
-            }}>
-            <Image source={image} />
-          </View>
-          <View
-            style={{
-              borderTopColor: colors.grey,
-              width: '100%',
-            }}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('PastEventsDetails')}>
-              <SmallScoreTable />
-            </TouchableOpacity>
-          </View>
-        </ScrollView>
+        <View
+          style={{
+            paddingTop: '1%',
+            width: '90%',
+            height: '100%',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <ScrollView styles={{width: '100%', height: '100%'}}>
+            <View
+              style={{
+                borderTopColor: colors.grey,
+                width: '100%',
+                paddingVertical: '5%',
+                marginBottom: '5%',
+                borderBottomWidth: 0.8,
+              }}>
+              <Card
+                title="Jordan Weber's Dyersville Country Club"
+                firstRow="Dyersville Country Club"
+                secondRow="Best Shot Tournament"
+                thirdRow="Date: 5/15/2020"
+                incomplete
+              />
+            </View>
+            <View
+              style={{
+                borderTopColor: colors.grey,
+                borderBottomWidth: 0.8,
+                width: '100%',
+                alignItems: 'center',
+                paddingBottom: '3%',
+                marginBottom: '3%',
+              }}>
+              <Image source={image} />
+            </View>
+            <View
+              style={{
+                borderTopColor: colors.grey,
+                width: '100%',
+              }}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('PastEventsDetails')}>
+                <SmallScoreTable />
+              </TouchableOpacity>
+            </View>
+          </ScrollView>
+        </View>
       </LinearGradient>
     </ImageBackground>
   );

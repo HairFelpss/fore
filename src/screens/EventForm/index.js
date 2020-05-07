@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ImageBackground, StatusBar, View, Text} from 'react-native';
+import {ImageBackground, StatusBar, View, Text, ScrollView} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {InputField as Input, InputMultiline} from '~/components/Input';
@@ -7,7 +7,7 @@ import CheckBox from '~/components/Checkbox';
 import styles from './styles';
 import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 
 import {Title} from '~/components/Text';
 
@@ -19,7 +19,7 @@ const EventForm = () => {
       <LinearGradient
         colors={['#82F3FF', '#00A9BB']}
         style={[styles.panel, {marginTop: useHeaderHeight()}]}>
-        <View style={{width: '100%'}}>
+        <ScrollView style={{width: '100%', height: '100%'}}>
           <View style={styles.part}>
             <View style={styles.title}>
               <Title title="Name Your Event:" />
@@ -71,9 +71,9 @@ const EventForm = () => {
               fontSize={18}
             />
           </View>
-        </View>
+        </ScrollView>
       </LinearGradient>
-      <Button title="Next" size={22} screen="EventInvite" bottom />
+      <BottomButton title="Next" size={22} screen="EventInvite" />
     </ImageBackground>
   );
 };

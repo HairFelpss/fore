@@ -5,7 +5,7 @@ import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import Card from '~/components/Card';
 import {Title} from '~/components/Text';
-import Button from '~/components/Button';
+import {Button} from '~/components/Button';
 import styles from './styles';
 import colors from '~/styles';
 import bg from '~/assets/background/bg.png';

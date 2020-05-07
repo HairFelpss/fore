@@ -2,7 +2,7 @@ import React from 'react';
 import {ImageBackground, StatusBar, View, ScrollView} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
-import Button from '~/components/Button';
+import {BottomButton} from '~/components/Button';
 import Card from '~/components/Card';
 import styles from './styles';
 
@@ -74,7 +74,7 @@ const EventsNearMe = () => {
           </ScrollView>
         </View>
       </LinearGradient>
-      <Button title="Search All Events" size={22} screen="Search" bottom />
+      <BottomButton title="Search All Events" size={22} screen="Search" />
     </ImageBackground>
   );
 };

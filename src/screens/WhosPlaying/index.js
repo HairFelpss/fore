@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {SmallInput} from '~/components/Input';
 import styles from './styles';
 import bg from '~/assets/background/bg.png';
-import Button from '~/components/Button';
+import {BottomButton, SmallButton} from '~/components/Button';
 
 import {FirstTable} from '~/components/Table';
 
@@ -34,8 +34,12 @@ const WhosPlaying = () => {
           </ScrollView>
         </View>
       </LinearGradient>
-      <Button title="Add Player" size={22} screen="WhosPlaying" bottom />
-      <Button title="I'm Done. Let's Play!" size={20} screen="Scores" bottom />
+      <SmallButton
+        title="Add Player"
+        size={15}
+        onPress={() => pushPlayerAmount()}
+      />
+      <BottomButton title="I'm Done. Let's Play!" size={20} screen="Scores" />
     </ImageBackground>
   );
 };

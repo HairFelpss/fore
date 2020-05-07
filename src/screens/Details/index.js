@@ -3,7 +3,7 @@ import {ImageBackground, StatusBar, View, Image} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import Card from '~/components/Card';
-import Button from '~/components/Button';
+import {Button} from '~/components/Button';
 import styles from './styles';
 import colors from '~/styles';
 import bg from '~/assets/background/bg.png';
