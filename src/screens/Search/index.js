@@ -62,7 +62,7 @@ const Search = () => {
           </View>
         </View>
       </LinearGradient>
-      <Button title="Search All Events" size={22} screen="Find" />
+      <Button title="Search All Events" size={22} screen="Find" bottom />
     </ImageBackground>
   );
 };

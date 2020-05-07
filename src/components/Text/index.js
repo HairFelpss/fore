@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Text} from 'react-native';
 import colors from '~/styles';
 import styles from './styles';
-import button from '~/assets/button/button.png';
 
 export const Content = ({content}) => {
   return <Text style={styles.content}>{content}</Text>;
@@ -14,4 +13,8 @@ export const Title = ({title, center}) => {
       {title}
     </Text>
   );
+};
+
+export const DisplayName = ({title}) => {
+  return <Text style={styles.displayName}>{title}</Text>;
 };

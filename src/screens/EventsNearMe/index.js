@@ -27,7 +27,7 @@ const EventsNearMe = () => {
           style={{
             paddingTop: '5%',
             width: '90%',
-            height: '85%',
+            maxHeight: '99%',
             justifyContent: 'space-between',
           }}>
           <ScrollView styles={{height: '100%'}}>
@@ -74,7 +74,7 @@ const EventsNearMe = () => {
           </ScrollView>
         </View>
       </LinearGradient>
-      <Button title="Search All Events" size={22} screen="Search" />
+      <Button title="Search All Events" size={22} screen="Search" bottom />
     </ImageBackground>
   );
 };

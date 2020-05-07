@@ -63,7 +63,7 @@ const Find = () => {
           </View>
         </View>
       </LinearGradient>
-      <Button title="Register For This Event" size={18} screen="Search" />
+      <Button title="Register For This Event" size={18} screen="Home" />
     </ImageBackground>
   );
 };

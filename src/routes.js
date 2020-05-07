@@ -24,6 +24,14 @@ import EventsNearMe from '~/screens/EventsNearMe';
 import Search from '~/screens/Search';
 import Find from '~/screens/Find';
 import Details from '~/screens/Details';
+import PastEvents from '~/screens/PastEvents';
+import UpcomingEvents from '~/screens/UpcomingEvents';
+import WhosPlaying from '~/screens/WhosPlaying';
+import PastEventsDetails from '~/screens/PastEventsDetails';
+import UpcomingEventsDetails from '~/screens/UpcomingEventsDetails';
+import Scorecard from '~/screens/Scorecard';
+import Scores from '~/screens/Scores';
+import Leaderboard from '~/screens/Leaderboard';
 
 import backButton from '~/assets/backButton/backButton.png';
 import menuButton from '~/assets/menu/hamburger.png';
@@ -200,6 +208,94 @@ const AuthRoutes = createStackNavigator(
       screen: Details,
       navigationOptions: ({navigation}) => ({
         title: 'Event Details',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    Scorecard: {
+      screen: Scorecard,
+      navigationOptions: ({navigation}) => ({
+        title: 'Scorecard',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    WhosPlaying: {
+      screen: WhosPlaying,
+      navigationOptions: ({navigation}) => ({
+        title: "Who's Playing",
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    Scores: {
+      screen: Scores,
+      navigationOptions: ({navigation}) => ({
+        title: 'Scorecard',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    Leaderboard: {
+      screen: Leaderboard,
+      navigationOptions: ({navigation}) => ({
+        title: 'Leaderboard',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    PastEvents: {
+      screen: PastEvents,
+      navigationOptions: ({navigation}) => ({
+        title: 'My Past Events',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    UpcomingEvents: {
+      screen: UpcomingEvents,
+      navigationOptions: ({navigation}) => ({
+        title: 'My Upcoming Events',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    PastEventsDetails: {
+      screen: PastEventsDetails,
+      navigationOptions: ({navigation}) => ({
+        title: 'Events Details',
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image source={backButton} />
+          </TouchableOpacity>
+        ),
+      }),
+    },
+    UpcomingEventsDetails: {
+      screen: UpcomingEventsDetails,
+      navigationOptions: ({navigation}) => ({
+        title: 'Events Details',
         headerLeft: () => (
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image source={backButton} />

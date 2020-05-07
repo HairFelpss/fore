@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     padding: 0,
   },
   imageBottom: {
-    height: Dimensions.get('window').height * 0.089,
-    width: Dimensions.get('window').width * 0.67,
+    height: Dimensions.get('window').height * 0.085,
+    width: Dimensions.get('window').width * 0.76,
     overflow: 'hidden',
     margin: 0,
     padding: 0,
