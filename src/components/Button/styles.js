@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
     padding: 0,
   },
   smallButton: {
-    height: Dimensions.get('window').height * 0.055,
-    width: Dimensions.get('window').width * 0.49,
+    height: Dimensions.get('window').height * 0.06,
+    width: Dimensions.get('window').width * 0.5,
     overflow: 'hidden',
     margin: 0,
     padding: 0,

@@ -36,8 +36,8 @@ const UpcomingEventsDetails = () => {
         <View
           style={{
             paddingTop: '1%',
-            width: '90%',
-            height: '100%',
+            width: '100%',
+            height: '97%',
             justifyContent: 'center',
             alignItems: 'center',
           }}>
@@ -47,7 +47,7 @@ const UpcomingEventsDetails = () => {
                 borderTopColor: colors.grey,
                 width: '100%',
                 paddingVertical: '5%',
-                marginBottom: '5%',
+                marginBottom: '2%',
                 borderBottomWidth: 0.8,
               }}>
               <Card

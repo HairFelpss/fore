@@ -34,7 +34,6 @@ import Scores from '~/screens/Scores';
 import Leaderboard from '~/screens/Leaderboard';
 
 import backButton from '~/assets/backButton/backButton.png';
-import menuButton from '~/assets/menu/hamburger.png';
 import logo from '~/assets/logo/logo.png';
 
 const noAuthRoutes = createStackNavigator(
@@ -57,10 +56,6 @@ const noAuthRoutes = createStackNavigator(
     defaultNavigationOptions: {
       headerTitleAlign: 'center',
       headerTransparent: true,
-      headerTintColor: 'transparent',
-      headerLeftContainerStyle: {
-        paddingLeft: '50%',
-      },
       headerTitleStyle: {
         color: colors.titleWhite,
         fontSize: 26,
@@ -309,8 +304,10 @@ const AuthRoutes = createStackNavigator(
       headerTitleAlign: 'center',
       headerTransparent: true,
       headerTintColor: 'transparent',
+      headerLayoutPreset: 'center',
       headerLeftContainerStyle: {
-        paddingLeft: '50%',
+        paddingTop: '15%',
+        paddingLeft: '25%',
       },
       headerTitleStyle: {
         color: colors.darkWhite,

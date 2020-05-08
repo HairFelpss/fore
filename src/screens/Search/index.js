@@ -90,7 +90,7 @@ const Search = () => {
           </View>
         </View>
       </LinearGradient>
-      <BottomButton title="Search All Events" size={22} screen="Find" />
+      <BottomButton title="Find Course" size={22} screen="Find" />
       {visibleState && (
         <Overlay
           visible={visibleState}

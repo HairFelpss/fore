@@ -24,7 +24,7 @@ const WhosPlaying = () => {
         colors={['#82F3FF', '#00A9BB']}
         style={[styles.panel, {marginTop: useHeaderHeight()}]}>
         <View style={{width: '100%', padding: '3%'}}>
-          <ScrollView>
+          <ScrollView style={{height: '90%'}}>
             {playerAmount.map((player, index) => (
               <View style={styles.part} key={index}>
                 <SmallInput content={`Player ${index + 1}:`} />
@@ -33,12 +33,12 @@ const WhosPlaying = () => {
             ))}
           </ScrollView>
         </View>
+        <SmallButton
+          title="Add Player"
+          size={15}
+          onPress={() => pushPlayerAmount()}
+        />
       </LinearGradient>
-      <SmallButton
-        title="Add Player"
-        size={15}
-        onPress={() => pushPlayerAmount()}
-      />
       <BottomButton title="I'm Done. Let's Play!" size={20} screen="Scores" />
     </ImageBackground>
   );
