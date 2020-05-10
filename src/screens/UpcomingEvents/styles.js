@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 21,
-    fontFamily: 'comic-sans-ms-bold',
+    fontFamily: 'Comic Sans MS Bold',
     color: 'black',
     paddingLeft: '5%',
   },
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     paddingLeft: '15%',
     color: colors.darkGrey,
     paddingVertical: '2%',
-    fontFamily: 'ComicSansMSRegular',
+    fontFamily: 'Comic Sans MS',
   },
 });
 

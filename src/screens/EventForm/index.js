@@ -34,7 +34,7 @@ const EventForm = () => {
                   fontSize: 10,
                   paddingLeft: '2%',
                   color: colors.grey,
-                  fontFamily: 'ComicSansMSRegular',
+                  fontFamily: 'Comic Sans MS',
                 }}>
                 (Tip: 9 Holes May Draw More Player)
               </Text>

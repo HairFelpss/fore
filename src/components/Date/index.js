@@ -18,9 +18,7 @@ const Title = ({date, name, end}) => {
         alignItems: 'center',
       }}>
       <View>
-        <Text style={{fontSize: 18, fontFamily: 'ComicSansMSRegular'}}>
-          {name}
-        </Text>
+        <Text style={{fontSize: 18, fontFamily: 'Comic Sans MS'}}>{name}</Text>
       </View>
       <View
         style={{
@@ -29,7 +27,7 @@ const Title = ({date, name, end}) => {
           paddingLeft: end ? '6%' : '1%',
         }}>
         <View>
-          <Text style={{fontSize: 18, fontFamily: 'ComicSansMSRegular'}}>
+          <Text style={{fontSize: 18, fontFamily: 'Comic Sans MS'}}>
             {Moment(date).format('L')}
           </Text>
         </View>

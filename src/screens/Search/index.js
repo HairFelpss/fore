@@ -63,7 +63,7 @@ const Search = () => {
               textAlign: 'center',
               color: colors.grey,
               fontSize: 20,
-              fontFamily: 'comic-sans-ms-bold',
+              fontFamily: 'Comic Sans MS Bold',
               paddingVertical: '10%',
             }}>
             OR

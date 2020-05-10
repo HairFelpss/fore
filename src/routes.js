@@ -59,7 +59,7 @@ const noAuthRoutes = createStackNavigator(
       headerTitleStyle: {
         color: colors.titleWhite,
         fontSize: 26,
-        fontFamily: 'comic-sans-ms-bold',
+        fontFamily: 'Comic Sans MS Bold',
         shadowOffset: {width: 0, height: 1},
         shadowOpacity: 0.9,
         shadowRadius: 2,
@@ -312,7 +312,7 @@ const AuthRoutes = createStackNavigator(
       headerTitleStyle: {
         color: colors.darkWhite,
         fontSize: 26,
-        fontFamily: 'comic-sans-ms-bold',
+        fontFamily: 'Comic Sans MS Bold',
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: {width: 0, height: 4},
         textShadowRadius: 4,

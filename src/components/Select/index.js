@@ -13,7 +13,7 @@ const Select = ({name, toggleOverlay, selected}) => {
             color: colors.grey,
             textAlign: 'center',
             fontSize: selected ? 16 : 21,
-            fontFamily: 'ComicSansMSRegular',
+            fontFamily: 'Comic Sans MS',
           }}>
           {name}
         </Text>

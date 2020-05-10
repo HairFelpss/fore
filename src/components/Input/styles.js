@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     color: colors.grey,
     paddingHorizontal: 10,
     paddingVertical: 0,
-    fontFamily: 'ComicSansMSRegular',
+    fontFamily: 'Comic Sans MS',
   },
   inputMultilineContainer: {
     borderWidth: 1,
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     color: colors.grey,
     paddingHorizontal: 10,
     paddingVertical: 0,
-    fontFamily: 'ComicSansMSRegular',
+    fontFamily: 'Comic Sans MS',
   },
   smallInputContainer: {
     flexDirection: 'row',
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   smallInput: {
     backgroundColor: 'transparent',
-    fontFamily: 'ComicSansMSRegular',
+    fontFamily: 'Comic Sans MS',
     color: colors.grey,
     fontSize: 13,
     paddingVertical: 0,

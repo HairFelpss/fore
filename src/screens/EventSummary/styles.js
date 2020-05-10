@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     color: colors.grey,
-    fontFamily: 'ComicSansMSRegular',
+    fontFamily: 'Comic Sans MS',
   },
 });
 

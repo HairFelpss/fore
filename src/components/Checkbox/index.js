@@ -18,7 +18,7 @@ const Checkbox = ({title, fontSize, color, center}) => {
             fontSize: fontSize,
             color: color,
             paddingLeft: '4%',
-            fontFamily: 'ComicSansMSRegular',
+            fontFamily: 'Comic Sans MS',
           }}>
           {title}
         </Text>

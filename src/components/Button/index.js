@@ -33,7 +33,7 @@ export const Button = ({title, size, screen, type}) => {
               textAlignVertical: 'center',
               fontSize: size,
               color: colors.white,
-              fontFamily: 'comic-sans-ms-bold',
+              fontFamily: 'Comic Sans MS Bold',
             }}>
             {title}
           </Text>
@@ -62,7 +62,7 @@ export const BottomButton = ({title, size, screen}) => {
               textAlign: 'center',
               fontSize: size,
               color: colors.white,
-              fontFamily: 'comic-sans-ms-bold',
+              fontFamily: 'Comic Sans MS Bold',
             }}>
             {title}
           </Text>
@@ -85,7 +85,7 @@ export const SmallButton = ({title, size, onPress}) => {
               textAlign: 'center',
               fontSize: size,
               color: colors.white,
-              fontFamily: 'comic-sans-ms-bold',
+              fontFamily: 'Comic Sans MS Bold',
             }}>
             {title}
           </Text>

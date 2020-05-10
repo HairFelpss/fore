@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     margin: 3,
     textAlign: 'center',
     color: colors.grey,
-    fontFamily: 'ComicSansMSRegular',
+    fontFamily: 'Comic Sans MS',
     fontSize: 13,
   },
   wrapper: {flexDirection: 'row'},
