@@ -1,4 +1,4 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet, Dimensions, Platform} from 'react-native';
 import colors from '~/styles';
 
 const styles = StyleSheet.create({
@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 35,
-    fontFamily: 'Comic Sans MS Bold',
+    fontFamily: Platform.OS === 'ios' ? 'Comic Sans MS' : 'Comic Sans MS Bold',
+    fontWeight: Platform.OS === 'ios' ? 'bold' : null,
     color: colors.grey,
     textAlign: 'center',
     paddingBottom: '2%',

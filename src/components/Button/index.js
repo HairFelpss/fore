@@ -7,6 +7,7 @@ import {
   ImageBackground,
   Text,
   Dimensions,
+  Platform,
 } from 'react-native';
 import colors from '~/styles';
 import styles from './styles';
@@ -33,7 +34,9 @@ export const Button = ({title, size, screen, type}) => {
               textAlignVertical: 'center',
               fontSize: size,
               color: colors.white,
-              fontFamily: 'Comic Sans MS Bold',
+              fontFamily:
+                Platform.OS === 'ios' ? 'Comic Sans MS' : 'Comic Sans MS Bold',
+              fontWeight: Platform.OS === 'ios' ? 'bold' : null,
             }}>
             {title}
           </Text>
@@ -62,7 +65,9 @@ export const BottomButton = ({title, size, screen}) => {
               textAlign: 'center',
               fontSize: size,
               color: colors.white,
-              fontFamily: 'Comic Sans MS Bold',
+              fontFamily:
+                Platform.OS === 'ios' ? 'Comic Sans MS' : 'Comic Sans MS Bold',
+              fontWeight: Platform.OS === 'ios' ? 'bold' : null,
             }}>
             {title}
           </Text>
@@ -85,7 +90,9 @@ export const SmallButton = ({title, size, onPress}) => {
               textAlign: 'center',
               fontSize: size,
               color: colors.white,
-              fontFamily: 'Comic Sans MS Bold',
+              fontFamily:
+                Platform.OS === 'ios' ? 'Comic Sans MS' : 'Comic Sans MS Bold',
+              fontWeight: Platform.OS === 'ios' ? 'bold' : null,
             }}>
             {title}
           </Text>

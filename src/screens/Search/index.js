@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ImageBackground, StatusBar, View, Text} from 'react-native';
+import {ImageBackground, StatusBar, View, Text, Platform} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {BottomButton} from '~/components/Button';
@@ -63,7 +63,9 @@ const Search = () => {
               textAlign: 'center',
               color: colors.grey,
               fontSize: 20,
-              fontFamily: 'Comic Sans MS Bold',
+              fontFamily:
+                Platform.OS === 'ios' ? 'Comic Sans MS' : 'Comic Sans MS Bold',
+              fontWeight: Platform.OS === 'ios' ? 'bold' : null,
               paddingVertical: '10%',
             }}>
             OR
