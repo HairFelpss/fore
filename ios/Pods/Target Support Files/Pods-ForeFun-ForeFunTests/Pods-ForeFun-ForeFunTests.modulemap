@@ -1,0 +1,6 @@
+module Pods_ForeFun_ForeFunTests {
+  umbrella header "Pods-ForeFun-ForeFunTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
