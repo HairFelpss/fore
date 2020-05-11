@@ -48,9 +48,7 @@ export const Button = ({title, size, screen, type}) => {
 
 export const BottomButton = ({title, size, screen}) => {
   const navigation = useContext(NavigationContext);
-  console.log(Dimensions.get('window').height * 0.085);
-  console.log(Dimensions.get('window').width * 0.73);
-
+ 
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate(screen)}

@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     borderWidth: 1,
     borderColor: colors.grey,
-    borderRadius: 50,
+    borderRadius: Platform.OS === 'ios' ? 10 : 50,
     width: '70%',
     marginVertical: '1%',
   },

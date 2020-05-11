@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImageBackground, StatusBar, ScrollView, Text} from 'react-native';
+import {ImageBackground, StatusBar, ScrollView, Text, Dimensions} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {InputField as Input} from '~/components/Input';

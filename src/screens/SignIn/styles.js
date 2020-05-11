@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     borderRadius: 20,
-    height: Dimensions.get('window').height < 685 ? '68%' : '70%',
+    height: Dimensions.get('window').height < 685 ? '68%' : Dimensions.get('window').height < 730 ? '73%' : '67%',
     width: '90%',
     backgroundColor: '#555',
   },
