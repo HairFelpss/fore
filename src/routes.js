@@ -1,10 +1,8 @@
 import React from 'react';
-import {Image, TouchableOpacity} from 'react-native';
+import {Image, TouchableOpacity, Platform } from 'react-native';
 
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import {createDrawerNavigator, DrawerActions} from 'react-navigation-drawer';
-
 import {Dimensions} from 'react-native';
 
 import colors from './styles';
@@ -308,7 +306,7 @@ const AuthRoutes = createStackNavigator(
       headerTintColor: 'transparent',
       headerLayoutPreset: 'center',
       headerLeftContainerStyle: {
-        paddingTop: '15%',
+        paddingTop: Platform.OS === 'ios' ? '10%' : '15%',
         paddingLeft: '25%',
       },
       headerTitleStyle: {

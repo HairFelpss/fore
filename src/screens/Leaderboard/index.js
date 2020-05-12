@@ -36,7 +36,7 @@ const Leaderboard = () => {
               <Switch
                 trackColor={{false: '#00A9BB', true: '#00A9BB'}}
                 thumbColor={isEnabled ? '#00909F' : '#00909F'}
-                ios_backgroundColor="#00A9BB"
+                ios_backgroundColor="#A0F6FF"
                 onValueChange={toggleSwitch}
                 value={isEnabled}
               />
