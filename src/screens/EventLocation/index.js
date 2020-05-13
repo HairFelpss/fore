@@ -3,7 +3,7 @@ import {ImageBackground, StatusBar, View} from 'react-native';
 import {useHeaderHeight} from 'react-navigation-stack';
 import Select from '~/components/Select';
 import {BottomButton} from '~/components/Button';
-import Overlay from '~/components/Overlay';
+import {OverlayComponent as Overlay} from '~/components/Overlay';
 import styles from './styles';
 import bg from '~/assets/background/bg.png';
 

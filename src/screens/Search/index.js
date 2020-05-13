@@ -4,7 +4,7 @@ import {useHeaderHeight} from 'react-navigation-stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {BottomButton} from '~/components/Button';
 import SearchBar from '~/components/Search';
-import Overlay from '~/components/Overlay';
+import {OverlayComponent as Overlay} from '~/components/Overlay';
 import Select from '~/components/Select';
 import styles from './styles';
 

@@ -30,7 +30,11 @@ const EventDate = () => {
             </View>
           </View>
         )}
-        <BottomButton title="Next" size={22} screen="EventNear" />
+        <BottomButton
+          title="Next"
+          size={22}
+          onPress={() => navigation.navigate('EventNear')}
+        />
       </View>
     </ImageBackground>
   );

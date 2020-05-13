@@ -46,13 +46,11 @@ export const Button = ({title, size, screen, type}) => {
   );
 };
 
-export const BottomButton = ({title, size, screen}) => {
+export const BottomButton = ({title, size, screen, onPress}) => {
   const navigation = useContext(NavigationContext);
- 
+
   return (
-    <TouchableOpacity
-      onPress={() => navigation.navigate(screen)}
-      style={styles.imageBottom}>
+    <TouchableOpacity onPress={onPress} style={styles.imageBottom}>
       <ImageBackground style={styles.image} source={button}>
         <View
           style={{

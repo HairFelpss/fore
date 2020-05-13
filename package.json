@@ -12,6 +12,10 @@
   "dependencies": {
     "@react-native-community/datetimepicker": "^2.3.2",
     "@react-native-community/masked-view": "^0.1.9",
+    "@react-native-firebase/app": "^6.7.1",
+    "@react-native-firebase/auth": "^6.7.1",
+    "@react-native-firebase/firestore": "^6.7.1",
+    "@react-native-firebase/iid": "^6.7.1",
     "axios": "^0.19.2",
     "moment": "^2.25.0",
     "prop-types": "^15.7.2",
@@ -31,6 +35,7 @@
     "react-native-timeline-flatlist": "^0.7.2",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.3.7",
+    "react-navigation-stack": "^2.5.0",
     "reactotron-react-native": "^5.0.0"
   },
   "devDependencies": {

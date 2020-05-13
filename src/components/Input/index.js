@@ -4,17 +4,17 @@ import {Input} from 'react-native-elements';
 import colors from '~/styles';
 import styles from './styles';
 
-export const InputField = ({content, password}) => {
+export const InputField = ({content, password, value, onChangeText}) => {
   const [inputValue, setInputValue] = useState('');
   return (
     <Input
       placeholder={content}
       placeholderTextColor={colors.grey}
-      value={inputValue}
-      onChange={(e) => setInputValue(e.target.value)}
+      value={value}
       inputStyle={styles.input}
       inputContainerStyle={styles.inputContainer}
       secureTextEntry={password ? true : false}
+      onChangeText={onChangeText}
     />
   );
 };
