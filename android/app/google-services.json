@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "721809898610",
+    "firebase_url": "https://forefun-12cf8.firebaseio.com",
+    "project_id": "forefun-12cf8",
+    "storage_bucket": "forefun-12cf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721809898610:android:257932c176e529cb4c56eb",
+        "android_client_info": {
+          "package_name": "com.forefun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721809898610-6buh4fp6aaknrhdi20jrdi73gi7b1ats.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forefun",
+            "certificate_hash": "6e08d36412bc4e403795eb4140d1311eb5f8daa8"
+          }
+        },
+        {
+          "client_id": "721809898610-updge4ivg0npdf4arlpm8bqrog2idgkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH-SJSBPWcm93cZdaR-DaGrf5bNl7Nn6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721809898610-updge4ivg0npdf4arlpm8bqrog2idgkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
