@@ -17,12 +17,11 @@ import {signInWithEmailAndPassword} from '~/server/firebase';
 const SignIn = () => {
   const navigation = useContext(NavigationContext);
   const [password, setPassword] = useState('');
-  const [number, setNumber] = useState('');
+  const [email, setEmail] = useState('');
 
   const login = async () => {
     try {
-      await signInWithEmailAndPassword(number, password);
-      console.log('chegou aqui');
+      await signInWithEmailAndPassword(email, password);
       navigation.navigate('Home');
     } catch (err) {
       console.log(err);
@@ -39,9 +38,9 @@ const SignIn = () => {
         <Text style={styles.title}>Sign In</Text>
         <View style={{paddingTop: '15%'}}>
           <Input
-            content="Mobile Phone #"
-            value={number}
-            onChangeText={(text) => setNumber(text)}
+            content="Email"
+            value={email}
+            onChangeText={(text) => setEmail(text)}
           />
           <Input
             content="Password"
